@@ -1,0 +1,32 @@
+.divContent {
+  width: 100%;
+  padding: 50px 120px;
+
+  .searchInput {
+    display: flex;
+    height: 30px;
+    padding: 8px;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    color: #011016;
+    border: none;
+    font-size: 12px;
+
+    img {
+      background: #fff;
+      width: 16px;
+      height: 16px;
+    }
+
+    input {
+      &::placeholder {
+        color: #b0b0b0;
+      }
+      &:focus-visible {
+        outline: none !important;
+      }
+    }
+  }
+}
