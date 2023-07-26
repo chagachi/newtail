@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Styles from "./Search.module.scss"
+import Styles from "./SearchBar.module.scss"
 import busca from "../../Assets/fe_search.png"
 
 
-function Search() {
+export function SearchBar() {
   const [search, setSearch] = useState('')
   
   return (
@@ -15,5 +15,3 @@ function Search() {
     </div>
   );
 }
-
-export default Search;
