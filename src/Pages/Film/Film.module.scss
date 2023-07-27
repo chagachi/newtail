@@ -3,10 +3,24 @@
   padding: 50px 120px;
   height: 100vh;
   background: #0b1014;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-  .content {
+  .infos {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
+    flex-direction: column;
     height: 100%;
+    max-width: 60%;
+  }
+
+  .cover {
+    width: 360px;
+    height: 508px;
+
+    img {
+      width: 100%;
+    }
   }
 }
