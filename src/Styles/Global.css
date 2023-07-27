@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #0B1014;
   color: #ffffff;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  letter-spacing: 1px;
 }
