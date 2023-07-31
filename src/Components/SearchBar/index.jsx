@@ -1,16 +1,18 @@
-import { useState } from "react";
-import Styles from "./SearchBar.module.scss"
-import busca from "../../Assets/fe_search.png"
+import Styles from "./SearchBar.module.scss";
+import busca from "../../Assets/fe_search.png";
 
-
-export function SearchBar() {
-  const [search, setSearch] = useState('')
-  
+export function SearchBar({ value, changeValue }) {
   return (
     <div className={Styles.divContent}>
       <div className={Styles.searchInput}>
         <img src={busca} alt="busca" />
-        <input type="text" value={search} placeholder={"Search movies..."} className={Styles.searchInput} onChange={(e) => setSearch(e.target.value)} />
+        <input
+          type="text"
+          value={value}
+          placeholder={"Search movies..."}
+          className={Styles.searchInput}
+          onChange={(e) => changeValue(e)}
+        />
       </div>
     </div>
   );
