@@ -8,7 +8,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Film />
+    element: <Home />
   },
   {
     path: "/film/:id",
